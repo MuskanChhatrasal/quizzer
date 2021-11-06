@@ -8,4 +8,4 @@ Read Instructions before opening the link:
 5) Choose the quiz you want to play and ENJOY!!
 
 
-Running Project:
+Running Project:https://quizzer-app-user.herokuapp.com/
