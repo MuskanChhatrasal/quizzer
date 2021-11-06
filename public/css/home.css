@@ -1,0 +1,11 @@
+#homepanel {
+	margin: 0 auto;
+	/* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+	background-color: yellow;
+	width: 50vw;
+	padding: 3%;
+	align-items: center;
+	text-align: center;
+	border: 5px solid black;
+	border-radius: 3%;
+}

@@ -12,31 +12,78 @@
 </head>
 
 <body>
-    <h1>Home Page</h1>
 
-<br>
-<div id="otherpanel">
+
+
+<!-- Navbar start -->
+<nav class="navbar navbar-inverse bg-dark navbar-dark">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="btn btn-warning navbar-btn" href="/">Quiz App</a>
+        </div>
     <form method="GET">
-        <button id="Leadbutton" class="btn btn-dark" formaction="/Leaderboard">Leaderboard</button>
+        <button id="Leadbutton" class="btn btn-success navbar-btn" formaction="/Leaderboard">Leaderboard</button>
     </form>
 
     <form method="GET">
-        <button id="Logoutbutton" class="btn btn-dark" formaction="/logout">Log Out</button>
+        <button id="Logoutbutton" class="btn btn-danger navbar-btn" formaction="/logout">Log Out</button>
     </form>
+
+
+    <!-- Large modal start -->
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg"
+        style="margin-left: 34rem;"> Test Instructions</button>
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                ...
+            </div>
+        </div>
+    </div>
+    <!-- Large modal end -->
+
+
+
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+<!-- User Info Begin -->
+<div class="card text-white bg-dark d-flex justify-content-end" style="width: 18rem; margin-top: 2rem;margin-left: 2rem; text-align: right;">
+    <div class="card-body">
+        <h5 class="card-title">
+            Username:
+            <span class="badge badge-secondary">
+                <%= username %>
+            </span>
+        </h5>
+        <h5 class="card-title">
+            Total Score:
+            <span class="badge badge-secondary">
+                <%= score %>
+            </span>
+        </h5>
+    </div>
 </div>
+<!-- User Info Ends -->
+
+
+
+
 
 <br>
 <br>
 <div id="homepagepanel">
-    <b><h2>Username:<%= username %></h2></b>
-    <b><h2>Total Score= <%= score %></h2></b>
-    <br>
-    <br>
+
     <form method="POST">
+
         <div id="PhysicsDiv">
             <button class="btn btn-dark" value="Physics" name="Physics" formaction="/Start/Physics">
             Physics Questions
-        </button>
+            </button>
         </div>
         <br>
         <div id="BiologyDiv">
@@ -50,7 +97,7 @@
                 Tech Questions
             </button>
         </div>
-        <br>
+        <!-- <br>
         <div id="HistoryDiv">
             <button  class="btn btn-dark" value="History" name="History" formaction="/Start/History">
                 History Questions
@@ -61,7 +108,7 @@
             <button class="btn btn-dark" value="Random" name="Random" formaction="/Start/Random">
                 Random Questions
             </button>
-        </div>
+        </div> -->
     </form>
 </div>
 
