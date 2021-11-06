@@ -14,30 +14,47 @@
 <body>
 
 
-<div class="container onlineTest m-10 p-sm-5">
-    <div class="bgWhite">
-          <center>
-            <!-- Makes POST request to /register route -->
-            <form action="/register" method="POST">
-              <h1>Register</h1>
-              <br>
-              <div class="form-group">
-                <label for="user">User</label>
-                <input type="user" class="form-control" name="username">
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" name="password">
-              </div>
-              <button type="submit" class="btn btn-dark">Register</button>
-            </form>
-          </center>
+<div class="container onlineTest">
+  <div class="row bgWhite">
 
-        </div>
+    <div class="col-12 col-md-7 leftPanel">
+      <img
+        src="https://thumbs.dreamstime.com/b/online-test-concept-quiz-computer-education-learning-digital-device-isolated-vector-illustration-132692632.jpg"
+        alt="online test image" class="onlineTestImage">
+      <h1 class="text-center p-3">Online Assessment Platform</h1>
+      <h5 class="text-center p-2">Developed with &#10084; by Muskan , Aayush & Arunav. </h5>
+    </div>
+
+    <div class="col-12 col-md-5 rightPanel">
+      <div class="center">
+        <form action="/register" method="POST">
+          <center>
+            <h1>Register</h1>
+          </center>
+          <label>
+            <fieldset class="scheduler-border">
+              <legend class="scheduler-border">User</legend>
+              <input type="user" id="user-name" class="form-control" name="username" required>
+            </fieldset>
+          </label>
+
+          <label>
+            <fieldset class="scheduler-border">
+              <legend class="scheduler-border">Password</legend>
+              <input type="password" id="user-email" class="form-control" name="password" required>
+            </fieldset>
+          </label>
+
+          <div class="col-12 text-right">
+            <button type="submit" class="btn btn-success m-lg-0"> Register </button>
+          </div>
+        </form>
+      </div>
 
     </div>
-</div>
 
+  </div>
+</div>
 
 
 
