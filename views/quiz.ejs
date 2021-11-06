@@ -1,21 +1,14 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/Style.css">
-  <title>Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="/css/StyleQuiz.css" rel="stylesheet">
+    <link href="/css/quiz.css" rel="stylesheet">
 </head>
+<body>
 
-<body>
-  <h1>Quiz</h1>
-</head>
-<body>
-<link href="/css/StyleQuiz.css" rel="stylesheet">
-<script defer src="/js/script.js"></script>
+
 
 <div class="container">
   <right>
@@ -25,8 +18,8 @@
                 </p>
   </right>
   <left>
-              <p>Subject :<span name="subject" id="subject"><%= subject %></span></p>
-              <p>Score :<span name="updatedscore" id="score">0</span></p>
+              <h1>Subject = <span name="subject" id="subject"><%= subject %></span></h1>
+              <h2>Score = <span name="updatedscore" id="score">0</span></h2>
   </left>
     <div id="question-container" class="hide">
       <div id="question">Question</div>
@@ -51,5 +44,13 @@
   </div>
 
 
+
+
+
+
+
+
+
+<script defer src="/js/script.js"></script>
 </body>
 </html>

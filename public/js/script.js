@@ -33,7 +33,7 @@ function startGame() {
   Timer.classList.remove('hide')
   answerButtonsElement.classList.remove('hide')
   var timer = setInterval(function () {
-    Timer.innerHTML = Math.floor(count / 60) + ":" + Math.floor(count % 60) + "";
+    Timer.innerHTML = Math.floor(count / 60) + ":" + Math.floor(count % 60) + " sec";
     count--;
     if (count === 0) {
       stopInterval();
@@ -105,10 +105,10 @@ function selectAnswer(e) {
   }
 
   if (selectedButton.dataset = correct) {
-    score = score + 20;
+    score = score + 4;
   }
   else {
-    score = score - 5;
+    score = score - 1;
   }
 
   scorecard.innerHTML = score;
