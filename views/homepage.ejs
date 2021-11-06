@@ -30,19 +30,7 @@
     </form>
 
 
-    <!-- Large modal start -->
-    <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg"
-        style="margin-left: 34rem;"> Test Instructions</button>
 
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                ...
-            </div>
-        </div>
-    </div>
-    <!-- Large modal end -->
 
 
 
@@ -76,40 +64,86 @@
 
 <br>
 <br>
+
+<!-- second modal start -->
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Instructions</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                            <ol style="padding-left: 2rem;">
+                                <li>The test comprises of multiple choice questions (MCQ).</li>
+                                <li>The test consist of 10 questions.</li>
+                                <li>The total time duration for test is 100 seconds.</li>
+                                <li>Once the time is finished, test will be submitted automatically.</li>
+                                <li>All the questions are of 1 point each and there is NO negative marking.</li>
+                                <li>Read the questions carefully.</li>
+                                <li>To start, click the "Start Test" button. When finished, click the "Submit" button.</li>
+                                <li>You'll get the test result at the time of submission.</li>
+                            </ol>
+
+
+            </div>
+            <div class="modal-footer">
+                <form method="POST">
+                    <div id="PhysicsDiv">
+                        <div id="PhysicsDiv">
+                            <button class="btn btn-dark" value="Physics" name="Physics" formaction="/Start/Physics">
+                                Physics Questions
+                            </button>
+                        </div>
+                        <!-- <button type="button" class="btn btn-primary">Physics Questions</button> -->
+                    </div>
+                    <!-- <br> -->
+                    <!-- <div id="BiologyDiv">
+                                <button class="btn btn-dark" value="Biology" name="Biology" formaction="/Start/Biology">
+                                    Biology Questions
+                                </button>
+                            </div>
+                            <br>
+                            <div id="TechDiv">
+                                <button class="btn btn-dark" value="Tech" name="Tech" formaction="/Start/Tech">
+                                    Tech Questions
+                                </button>
+                            </div> -->
+                    <!-- <br>
+                                <div id="HistoryDiv">
+                                    <button  class="btn btn-dark" value="History" name="History" formaction="/Start/History">
+                                        History Questions
+                                    </button>
+                                </div>
+                                <br>
+                                <div id="RandomDiv">
+                                    <button class="btn btn-dark" value="Random" name="Random" formaction="/Start/Random">
+                                        Random Questions
+                                    </button>
+                                </div> -->
+                </form>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- second modal end -->
+
+
+
 <div id="homepagepanel">
+        <button type="button" class="btn btn-danger mx-auto" data-toggle="modal" data-target="#exampleModalLong">
+            Start Test
+        </button>
 
-    <form method="POST">
-
-        <div id="PhysicsDiv">
-            <button class="btn btn-dark" value="Physics" name="Physics" formaction="/Start/Physics">
-            Physics Questions
-            </button>
-        </div>
-        <br>
-        <div id="BiologyDiv">
-            <button  class="btn btn-dark" value="Biology" name="Biology" formaction="/Start/Biology">
-                Biology Questions
-            </button>
-        </div>
-        <br>
-        <div id="TechDiv">
-            <button  class="btn btn-dark" value="Tech" name="Tech" formaction="/Start/Tech">
-                Tech Questions
-            </button>
-        </div>
-        <!-- <br>
-        <div id="HistoryDiv">
-            <button  class="btn btn-dark" value="History" name="History" formaction="/Start/History">
-                History Questions
-            </button>
-        </div>
-        <br>
-        <div id="RandomDiv">
-            <button class="btn btn-dark" value="Random" name="Random" formaction="/Start/Random">
-                Random Questions
-            </button>
-        </div> -->
-    </form>
 </div>
 
 
