@@ -50,3 +50,78 @@ body {
     text-align: right;
     background-color: aqua;
 }
+
+
+
+
+/************* Starting CSS  **************/
+a,
+a:visited,
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0%;
+}
+
+.btn.btn-default {
+    background-color: var(--lightpurple);
+    color: var(--white);
+}
+
+.btn-link {
+    font-size: 18px;
+    color: #1c1e20;
+    font-weight: 400 !important;
+    border-bottom: 2px solid #333;
+    padding-bottom: 6px !important;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--lightpurple);
+    font-weight: 400 !important;
+    border-bottom: none;
+    padding-bottom: 6px !important;
+}
+
+.btn.focus,
+.btn:focus {
+    box-shadow: none;
+}
+
+.heading {
+    color: var(--lightpurple);
+}
+
+.bgWhite {
+    background-color: var(--white);
+}
+
+.centerHorizontal {
+    margin: auto !important;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.centerVertical {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.centerBoth {
+    margin: auto;
+    width: 80%;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

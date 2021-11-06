@@ -32,26 +32,63 @@
 
     <title>Quiz</title>
 </head>
-
-
-
-
-
 <body>
-    <h1 id="heading">Home</h1>
-<br>
-    <div id="homepanel">
-            <h1>Choose Option!</h1>
-            <br>
-    <form method="POST" action="/loginpage">
-        <button class="btn btn-dark"  type="submit">Login</button>
-    </form>
-    <br>
-    <form method="POST" action="/registerpage">
-        <button class="btn btn-dark"  type="submit">Register</button>
-    </form>
-</div>
 
+
+            <!-- <h1 id="heading">Home</h1>
+            <br>
+            <div id="homepanel">
+                    <h1>Choose Option!</h1>
+                    <br>
+            <form method="POST" action="/loginpage">
+                <button class="btn btn-dark"  type="submit">Login</button>
+            </form>
+            <br>
+            <form method="POST" action="/registerpage">
+                <button class="btn btn-dark"  type="submit">Register</button>
+            </form>
+            </div> -->
+
+<div class="container onlineTest">
+    <div class="row bgWhite">
+
+        <div class="col-12 col-md-7 leftPanel">
+            <img src="https://thumbs.dreamstime.com/b/online-test-concept-quiz-computer-education-learning-digital-device-isolated-vector-illustration-132692632.jpg" alt="online test image" class="onlineTestImage">
+            <h1 class="text-center p-3">Online Assessment Platform</h1>
+            <h5 class="text-center p-2">Developed with &#10084; by Muskan , Aayush & Arunav. </h5>
+        </div>
+
+        <div class="col-12 col-md-5 rightPanel">
+            <div class="center">
+                <form action="/login" method="POST">
+                   <center><h1>Login</h1></center>
+                    <label >
+                        <fieldset class="scheduler-border">
+                            <legend class="scheduler-border">User</legend>
+                            <input type="user" id="user-name" class="form-control" name="username" required>
+                        </fieldset>
+                    </label>
+
+                    <label >
+                        <fieldset class="scheduler-border">
+                            <legend class="scheduler-border">Password</legend>
+                            <input type="password" id="user-email" class="form-control" name="password" required>
+                        </fieldset>
+                    </label>
+
+                    <div class="col-12 text-right">
+                        <button type="submit" class="btn btn-success m-lg-0"> Login </button>
+                    </div>
+                </form>
+                <form method="POST" action="/registerpage">
+                     <button class="btn btn-dark float-right m-1" type="submit" st >Register</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
 
 
 
